@@ -4,6 +4,8 @@ Allows a user to search a regular expression on any webpage and see the matches 
 
 Link to extension: [RegEx Detective](https://chrome.google.com/webstore/detail/regex-detective/hcfgelaeiejkndcdpndfghnennhaindd)
 
+![ReGex Detective In use](/images/in_use.png)
+
 ## Description
 
 A chrome extension written entirely in typescript, without using a UI framework.
