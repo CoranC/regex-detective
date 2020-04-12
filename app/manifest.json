@@ -1,0 +1,31 @@
+{
+  "name": "RegEx Detective",
+  "short_name": "RegEx Detective",
+  "description": "Allows a user to search a regular expression on any webpage and see the matches in the popup.",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "default_locale": "en",
+  "icons": {
+    "128": "images/regex_detective_icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["scripts/content_script.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": {
+      "128": "images/regex_detective_icon.png"
+    },
+    "default_title": "Open",
+    "default_popup": "pages/popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs", 
+    "storage",
+    "clipboardWrite"
+  ]
+}

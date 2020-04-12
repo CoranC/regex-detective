@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/popup.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+</head>
+<body class="container">
+  <!-- <div class="container"> -->
+    <section class="top">
+      <navbar class="re-navbar">
+        <div class="re-title-container">
+          <span class="re-title re-title-red">R</span>
+          <span class="re-title re-title-black">eg</span>
+          <span class="re-title re-title-red">E</span>
+          <span class="re-title re-title-black">x Detective</span>
+        </div>
+        <img src="../images/regex_detective_icon.png" width="40px" height="40px">
+      </navbar>
+
+      <div>
+        <label for="regex-input">Regex:</label>
+        <input type="text" value="the \w+" id="regex-input" name="regex-input">
+        <br>
+        <label for="flags">Flags:</label>
+        <div id="checkboxes" name="flags">
+          <label class="checkbox">
+          <input id='g' type="checkbox" checked disabled> g</label>
+          <label class="checkbox">
+          <input id='i' type="checkbox" checked> i</label>
+          <label class="checkbox">
+          <input id='m' type="checkbox" checked> m</label>
+        </div>
+        <div id="capture-group">
+          <label for="capture-group-input">Capture Group:</label>
+          <input type="number" value="0" id="capture-group-input" name="capture-group-input"
+            min="0" max="10">
+        </div>
+        <i class="fa fa-chevron-up expand-bottom"></i>
+      </div>
+    </section>
+
+    <section class="bottom">
+      <span id="regex-display">
+      <span class="start-slash">/</span>
+      <span class="pattern valid">the \w+</span>
+      <span class="end-slash">/</span>
+      <span class="flags"></span>
+      </span>
+
+      <br>
+      <button id="search-btn" class="button">Investigate</button>
+      <div class='found-term-menu'>
+        <p id='found-term-count'></p>
+        <!-- <span class="copy-terms">📋</span> -->
+        <i class="fa fa-copy copy-terms hidden"></i>
+      </div>
+      <div id='found-term-div'>
+        <br>
+        <table class="table">
+          <thead>
+            <th>Term</th>
+            <th>Search</th>
+            <th>Copy</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  <!-- </div> -->
+  <div class="pageloader is-bottom-to-top loader-red">
+    <span class="title">Investigating</span>
+  </div>
+</body>
+<script src="../scripts/popup.js"></script>
+</html>

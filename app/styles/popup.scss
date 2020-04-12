@@ -1,0 +1,145 @@
+@import "../../node_modules/bulma/bulma.sass";
+@import "../../node_modules/snackbar/src/snackbar.scss";
+@import "../../node_modules/bulma-pageloader/dist/css/bulma-pageloader.sass";
+// @import "../../node_modules/font-awesome-icons/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+
+html {
+  height: 0;
+}
+
+td {
+  max-width: 33%;
+}
+
+.top {
+  padding-bottom: 15px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.loader-red {
+  background: #d10000 !important;
+}
+
+.re-icon {
+  cursor: pointer;
+}
+
+.found-term {
+  width: 80% !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.copy-terms {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.found-term-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.expand-bottom {
+  display: block;
+  float: right;
+  cursor: pointer;
+}
+
+.re-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.re-title-container {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.re-title {
+  font-weight: 13;
+  font-size: 28px;
+}
+.re-title-red {
+  -webkit-text-stroke: black;
+  -webkit-text-stroke-width: 1px;
+  color: red;
+  font-size: 33px;
+}
+
+.re-title-black {
+  -webkit-text-stroke: black;
+  -webkit-text-stroke-width: 1px;
+  color: black;
+  font-weight: 200;
+}
+
+#found-term-div {
+  display: none;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.container {
+  margin: 10px;
+}
+
+.search {
+  cursor: pointer;
+}
+
+#checkboxes {
+  display: inline-flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+#regex-display {
+  display: flex;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+#regex-input {
+  font-size: 14px;
+}
+
+#regex-display > .pattern {
+  font-weight: 500;
+  font-style: normal;
+  white-space: nowrap;
+  overflow-x: auto;
+  max-width: 200px;
+}
+
+#regex-display > .pattern.valid {
+  color: green;
+}
+
+#regex-display > .pattern.invalid {
+  color: red;
+}
+
+table {
+  width: 100%;
+}
+
+tbody {
+  height: 200px;
+  overflow-y: auto;
+}
+
+.snackbar {
+  min-width: 265px !important;
+  text-align: center !important;
+}
