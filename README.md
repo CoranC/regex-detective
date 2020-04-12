@@ -2,7 +2,7 @@
 
 Allows a user to search a regular expression on any webpage and see the matches in the popup.
 
-Link to extension (RegEx Detective)[https://chrome.google.com/webstore/detail/regex-detective/hcfgelaeiejkndcdpndfghnennhaindd]
+Link to extension: [RegEx Detective](https://chrome.google.com/webstore/detail/regex-detective/hcfgelaeiejkndcdpndfghnennhaindd)
 
 ## Description
 
