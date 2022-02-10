@@ -50,7 +50,7 @@
     "gulp-tag-version": "1.x.x",
     "gulp-util": "3.x.x",
     "gulp-zip": "5.x.x",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "require-dir": "1.x.x",
     "standard": "14.x.x",
     "ts-loader": "^6.x.x",
